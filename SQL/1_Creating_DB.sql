@@ -6,5 +6,6 @@
 -- DROP DATABASE temp1;
 -- DROP DATABASE temp2;
 
-CREATE DATABASE college;
+CREATE DATABASE IF NOT EXISTS college;
+DROP DATABASE IF EXISTS class;
 use college;
