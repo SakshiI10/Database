@@ -1,3 +1,5 @@
+-- Database related queries
+
 -- This is to create a database
 -- CREATE DATABASE temp1;
 -- create database temp2;
