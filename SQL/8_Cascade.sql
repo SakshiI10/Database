@@ -40,3 +40,7 @@ VALUES
 (105, 'MNO', 12, 'F', 'Delhi'),
 (106, 'PQR', 82, 'B', 'Delhi');
 SELECT * FROM student;
+
+DROP TABLE student;
+DROP TABLE teacher;
+DROP TABLE dept;
