@@ -1,4 +1,5 @@
 -- Alter: To change the schema
+
 USE college;
 DROP TABLE student;
 

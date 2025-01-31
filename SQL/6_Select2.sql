@@ -1,4 +1,5 @@
--- SELECT IN DETAIL-1
+-- SELECT IN DETAIL-2
+
 USE college;
 
 -- Aggregate Functions: Aggregare functions perform a calculation on a set of values, and return a single value.

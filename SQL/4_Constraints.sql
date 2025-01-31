@@ -1,5 +1,5 @@
 -- Constraints
--- SQL Constraints are used to specify rules for fdatat in a table.
+-- SQL Constraints are used to specify rules for data in a table.
 
 USE college;
 

@@ -1,4 +1,5 @@
 -- TABLE RELATED Queries-2
+
 USE college;
 
 --  UPDATE

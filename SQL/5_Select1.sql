@@ -1,4 +1,5 @@
 -- SELECT IN DETAIL-1
+
 USE college;
 DROP TABLE IF EXISTS student;
 CREATE TABLE student(

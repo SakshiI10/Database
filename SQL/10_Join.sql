@@ -1,4 +1,5 @@
 --  JOIN
+
 USE college;
 -- 1. Inner join:
 
@@ -25,13 +26,11 @@ INSERT INTO course (id, course) VALUES
 SELECT * FROM student INNER JOIN course 
 ON student.id = course.id;
 
---  2. Left Join: Returns all records from the left table, and the matched records from
--- the right table
+--  2. Left Join: Returns all records from the left table, and the matched records from the right table
 SELECT * FROM student LEFT JOIN course 
 ON student.id = course.id;
 
--- 3. Right Join: Returns all records from the right table, and the matched records
--- from the left table
+-- 3. Right Join: Returns all records from the right table, and the matched records from the left table
 SELECT * FROM student RIGHT JOIN course 
 ON student.id = course.id;
 

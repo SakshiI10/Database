@@ -1,4 +1,5 @@
 -- USING CASCADE
+
 USE college;
 
 CREATE TABLE dept(
