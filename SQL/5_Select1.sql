@@ -45,4 +45,3 @@ SELECT * FROM student WHERE marks > 75 LIMIT 3;
 SELECT * FROM student;
 SELECT * FROM student ORDER BY marks ASC;
 SELECT * FROM student ORDER BY marks DESC LIMIT 3;
-
