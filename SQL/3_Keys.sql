@@ -7,4 +7,3 @@
 -- 2. Foreign Key
 -- A foreign key is a column (or set of columns) in a table that refers to the primary key in another table.
 -- FKs can have duplicate & null values
-
