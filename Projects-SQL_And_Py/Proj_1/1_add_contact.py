@@ -8,7 +8,6 @@ conn = mysql.connector.connect(
 )
 
 cursor = conn.cursor()
-print("Connected to MySQL!")
 
 def add_contact():
     name = input("Enter name: ")
