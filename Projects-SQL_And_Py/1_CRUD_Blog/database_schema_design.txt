@@ -1,0 +1,18 @@
+Database Schema
+1. Blog App has three tables those are: POSTS, TAGS, POST_TAGS
+
+2. POST TABLE: 
+It stores each Post-title, Post-content and Tags.
+a) It has Primary Id: ID set with AUTO_INCREMENT so that no one needs to manually set the ID.
+b) Title: It is the main heading of the Post.
+c) Content: It stores the content entered while creating a Blog Post.
+
+3. TAGS TABLE:
+It stores unique tags that are entered while creating a Post.
+a) It has Primary Id: ID set with AUTO_INCREMENT so that no one needs to manually set the ID.
+b) Name: It stores the actual text in the tag entered.
+
+4. POST_TAGS TABLE:
+This is the linking table that links POST and TAGS table.
+a) It has a Foreign Key: POST_ID it references the ID in POSTS table.
+a) It has a Foreign Key: TAGS_ID it references the ID in TAGS table.

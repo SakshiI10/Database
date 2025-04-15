@@ -1,0 +1,11 @@
+What is LangGraph?": "A Python framework called LangGraph is used to create stateful, multi-agent programs that are driven by language models (LLMs).,
+
+Who created LangGraph?": "Harrison Chase, the original developer of LangChain, led the team at LangChain that produced LangGraph.,
+
+When was LangGraph introduced?": "It was introduced in 2024.,
+
+How does LangGraph work?": "It enables you to specify a graph of nodes (such as agents or functions) with data (state) flowing between them.,
+
+It is built using which language?": "LangGraph is built in Python.,
+
+Is LangGraph available on GitHub?": "Yes, it is available on GitHub.
