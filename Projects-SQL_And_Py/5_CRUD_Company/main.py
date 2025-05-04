@@ -1,25 +1,29 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
-from fastapi.responses import JSONResponse
+import mysql.connector
 
-# Initialize FastAPI app
-app = FastAPI()
+conn = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="root123",
+    database="COMPANY_DB"
+)
 
-# Root path to confirm the server is running
-@app.get("/")
-async def root():
-    return {"message": "Welcome to the FastAPI app!"}
+cursor = conn.cursor()
 
-# Pydantic model for text input
-class TextInput(BaseModel):
-    text: str
+def create():
+    id = int(input("Enter company ID: ").strip())
+    name = input("Enter company name: ").strip()
+    loc = input("Enter company location: ").strip()
 
-# POST endpoint to clean and summarize text
-@app.post("/clean/")
-async def clean_text(data: TextInput):
-    cleaned_text = data.text.strip()  # Clean extra spaces
-    summarized_text = cleaned_text[:50]  # Summarize text by limiting to 50 characters
-    return JSONResponse(content={
-        "cleaned_text": cleaned_text,
-        "summarized_text": summarized_text
-    })
+    query = "INSERT INTO COMPANY (ID, COMPANY_NAME, COMPANY_LOC) VALUES (%s, %s, %s)"
+    values = (id, name, loc)
+
+    try:
+        cursor.execute(query, values)
+        conn.commit()
+        print("Created successfully.")
+    except mysql.connector.Error as err:
+        print("Error:", err)
+
+create()
+cursor.close()
+conn.close()

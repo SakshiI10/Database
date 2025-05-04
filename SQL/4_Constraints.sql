@@ -11,14 +11,13 @@ SELECT * FROM temp;
 
 -- 2. UNIQUE: 
 CREATE TABLE temp1 (
-id INT UNIQUE
+id INT NOT NULL UNIQUE
 );
 
 INSERT INTO temp1 values(1);
 INSERT INTO temp1 values(2);
 INSERT INTO temp1 values(3);
 INSERT INTO temp1 values(3);
-
 SELECT * FROM temp1;
 
 -- 3. Primary Key: makes a column unique and not null but used only for one.
@@ -36,7 +35,6 @@ INSERT INTO temp2 (id, name, age, city) VALUES
 (1, 'Alice', 30, 'New York'),
 (2, 'Bob', 25, 'Los Angeles'),
 (3, 'Charlie', 35, 'Chicago');
-
 SELECT * FROM temp2;
 
 -- 4. Foreign Key: prevent actions that would destroy links between tables
