@@ -15,7 +15,7 @@ SELECT SUM(marks) FROM student;
 SELECT AVG(marks) FROM student;
 
 -- GROUP BY clause: 
--- Groups rows that have the same values into summary rows.
+-- Groups rows that have same values into summary rows.
 -- It collects data from multiple records and groups the result by one or more column.
 -- *Generally we use group by with some aggregation function.
 SELECT city, count(name) FROM student GROUP BY city;
@@ -33,3 +33,7 @@ SELECT city, count(name) FROM student GROUP BY city HAVING MAX(marks) > 90;
 -- GROUP BY column(s)
 -- HAVING condition
 -- ORDER BY column(s) ASC;
+
+-- LIKE OPERATOR
+-- The LIKE operator is used to match a pattern.
+SELECT * FROM STUDENT WHERE CITY LIKE 'M%';

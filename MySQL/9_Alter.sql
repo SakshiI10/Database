@@ -36,7 +36,7 @@ ALTER TABLE student DROP COLUMN student_age;
 -- ALTER TABLE student RENAME TO stu;
 
 -- Truncate (to delete table's data)
-TRUNCATE TABLE student ;
+TRUNCATE TABLE student;
 -- After this you can reinsert the data
 
 SELECT * FROM student;
